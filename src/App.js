@@ -18,8 +18,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
       </Switch>
-      <Hero />
-      <Content />
+      {/* <Hero />
+      <Content /> */}
       <Footer />
     </>
 
