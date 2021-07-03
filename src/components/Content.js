@@ -22,16 +22,18 @@ console.log(data)
       useEffect(() => {
         getBlogs()
       }, [])
-const mapData = data.map(blog => {
-    return <div>
-        <h1>{blog.name}</h1>
-        <h1>{blog.title}</h1>
-        <p>
-            {blog.content}
-        </p>
-        <p>
-        <button onClick={()=> getBlogs()}>CLick</button>
-        </p>
+      
+const mapData = data.map((blog, idx) => {
+    return <div key={idx}>
+
+    <button>
+<Link to={{
+    pathname:"./single",
+    state: blog
+}}>
+{blog.name}
+</Link>
+</button>
     </div>
 })
 
@@ -42,14 +44,14 @@ const getBlogById = (id) => {
     
 }
 
-let thisBlog = blog.map((b, id)=>{
-    return (
-        <SingleBlog key={id} 
-            b = {b}
-            getBlogById = {getBlogById}
-        />
-    )
-})
+// let thisBlog = blog.map((b, id)=>{
+//     return (
+//         <SingleBlog key={id} 
+//             b = {b}
+//             getBlogById = {getBlogById}
+//         />
+//     )
+// })
  
 
 

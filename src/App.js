@@ -7,6 +7,7 @@ import Home from "./pages"
 import About from './pages/about'
 import Contact from './pages/contact'
 import { Switch, Route } from 'react-router-dom'
+import SingleBlog from './components/SingleBlog';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       {/* <Hero />
       <Content /> */}
       <Footer />
+      <Route path="/single" component={SingleBlog}/>
     </>
 
   );

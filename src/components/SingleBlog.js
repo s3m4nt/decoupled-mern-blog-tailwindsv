@@ -1,11 +1,15 @@
 import React from 'react'
+import {useLocation} from 'react-router-dom'
 
-function SingleBlog() {
+function SingleBlog(props) {
+    const location = useLocation()
+
     return (
-        <div>
-            
-        </div>
+<div>
+    Name: {location.state.name}
+</div>
     )
+
 }
 
 export default SingleBlog
