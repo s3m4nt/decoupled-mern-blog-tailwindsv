@@ -1,18 +1,20 @@
 import axios from 'axios'
 import React from 'react'
+import SingleBlog from './SingleBlog'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 function Content() {
 
     const [data, setData] = useState([])
+    const [blog, setBlog] = useState({})
 
     const getBlogs = () =>{
         const blogStuff = axios.get('http://localhost:3001/blog')
         .then(res  =>{
     // console.log(res)
-    setData(res)
-console.log(data);
+    setData(res.data)
+console.log(data)
         }).catch(err=> {
           console.log(err)
         })
@@ -27,11 +29,34 @@ const mapData = data.map(blog => {
         <p>
             {blog.content}
         </p>
+        <p>
+        <button onClick={()=> getBlogs()}>CLick</button>
+        </p>
     </div>
 })
+
+const getBlogById = (id) => {
+    // const oneBlog = axios.get(`http://localhost:3001/blog/${id}`)
+    // .then()
+    setBlog(id)
+    
+}
+
+let thisBlog = blog.map((b, id)=>{
+    return (
+        <SingleBlog key={id} 
+            b = {b}
+            getBlogById = {getBlogById}
+        />
+    )
+})
+ 
+
+
+
     return (
     <>
-<button onClick={()=> getBlogs()}>CLick</button>
+
 {mapData}
 
         <div className="h-auto bg-white min-h-full flex flex-col items-center border-b-4 border-t-4">
