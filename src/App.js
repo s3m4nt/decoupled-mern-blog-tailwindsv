@@ -12,7 +12,7 @@ import SingleBlog from './components/SingleBlog';
 function App() {
   return (
 
-    <>
+    <div className="">
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -21,9 +21,10 @@ function App() {
       </Switch>
       {/* <Hero />
       <Content /> */}
-      <Footer />
       <Route path="/single" component={SingleBlog}/>
-    </>
+      <Footer />
+
+    </div>
 
   );
 }
