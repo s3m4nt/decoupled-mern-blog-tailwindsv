@@ -18,6 +18,7 @@ function Contact() {
             <div className="text-center mb-14">
 <a href="mailto:brianyoungdev@protonmail.com">brianyoungdev@protonmail.com</a>
             </div>
+            
         </>
     )
 }
