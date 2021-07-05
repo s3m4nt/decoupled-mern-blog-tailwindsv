@@ -1,7 +1,5 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Content from './components/Content';
 import Footer from './components/Footer'
 import Home from "./pages"
 import About from './pages/about'
@@ -19,11 +17,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
       </Switch>
-      {/* <Hero />
-      <Content /> */}
-      <Route path="/single" component={SingleBlog}/>
+        <Route path="/single" component={SingleBlog}/>
       <Footer />
-
     </div>
 
   );
