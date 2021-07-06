@@ -4,10 +4,12 @@ import Content from '../components/Content'
 
 function Home() {
     return (
+
         <>
             <Hero />
             <Content />
         </>
+        
     )
 }
 
