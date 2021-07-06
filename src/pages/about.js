@@ -12,7 +12,7 @@ function About() {
             <br/><br/>
             The race was first organized in 1903 to increase sales for the newspaper L'Auto and is currently run by the Amaury Sport Organisation. The race has been held annually since its first edition in 1903 except when it was stopped for the two World Wars. As the Tour gained prominence and popularity, the race was lengthened and its reach began to extend around the globe. Participation expanded from a primarily French field as more riders from all over the world began to participate in the race each year. The Tour is a UCI World Tour event, which means that the teams that compete in the race are mostly UCI WorldTeams, with the exception of the teams that the organizers invite. It has become "the world's biggest annual sporting event." A women's Tour de France was held under different names between 1984 and 2009. Since 2014, the La Course by Le Tour de France is held for women in a one- or two-day format during the men's race.
             <br/><br/>
-            This BLOG. was create using MongoDB, Mongoose, Express, React and Node.js
+            This BLOG. was create using MongoDB, Mongoose, Express, React, Node.js and Tailwind
             </div>
         </>
     )
